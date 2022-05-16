@@ -38,3 +38,17 @@
     /* The width is the width of the web page */
     border: 4px solid #a3a3a3;
 }
+
+@media only screen and (max-width: 600px) {
+  .section-subheading {
+      font-size: 1.1em !important;
+  }
+
+  .section-heading {
+      font-size: 1.8em !important;
+  }
+  .property-stats > * {
+      width: 50%;
+  }
+
+}

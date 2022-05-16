@@ -53,21 +53,3 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// Initialize and add the map
-function initMap() {
-    // The location of OSU International House
-    const osu_international_house = { lat: 44.568226879064866, lng: -123.26777943353378 };
-    // The map, centered at OSU International House
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
-        center: osu_international_house,
-    });
-    // The marker, positioned at House
-    new google.maps.Marker({
-        position: osu_international_house,
-        map: map,
-        title: "OSU International House",
-    });
-}
-
-window.initMap = initMap;
