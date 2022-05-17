@@ -98,7 +98,7 @@
                                 <i class="fas fa-object-group fa-stack-1x fa-inverse"></i>
                             </span>
                     <span class="my-3 property-stats-head">Square-Feet</span>
-                    <h5> 1348</h5>
+                    <h5> 5400</h5>
                 </div>
                 <div class="col-sm-4 col-md-3 col-lg-2">
                             <span class="fa-stack fa-3x">
@@ -137,11 +137,12 @@
                 <h4 class="my-3">Rent</h4>
                 <ul class="list-group ">
                     <li class="list-group-item">
-                        <b>$475-$525 / month </b> <br><small><i>(depends on choice of
+                        <b>$500-$550 / month </b> <br><small><i>(depends on choice of
                         room)</i></small>
                     </li>
                     <li class="list-group-item"> First and last month’s rent are due prior to move in.</li>
-                    <li class="list-group-item"><b>$150 cleaning/security deposit</b> <br> <small>($100 is refundable)</small></li>
+                    <li class="list-group-item"><b>$200 cleaning/security deposit</b> <br> <small>($100 is
+                        refundable)</small></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
@@ -153,7 +154,7 @@
                 <ul class="list-group ">
                     <li class="list-group-item"> Wireless Internet
                     </li>
-                    <li class="list-group-item"> Cable TV</li>
+                    <li class="list-group-item"> TV Monitor </li>
                     <li class="list-group-item"> Electricity</li>
                     <li class="list-group-item"> Water and Sewer</li>
                     <li class="list-group-item"> Garbage Service</li>
@@ -173,7 +174,7 @@
                     <li class="list-group-item"> Desk, Chair and Table</li>
                     <li class="list-group-item"> Refrigerator</li>
                     <li class="list-group-item"> Digital Door Lock</li>
-                    <li class="list-group-item"> shared bathroom with up to 3 tenants.</li>
+                    <li class="list-group-item"> Shared bathroom with up to 3 tenants.</li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
@@ -186,9 +187,9 @@
                     <li class="list-group-item"> Use of a large common kitchen in which each tenant is assigned upper
                         and lower cabinets and counter top.
                     </li>
-                    <li class="list-group-item"> Dishes and appliances</li>
+                    <li class="list-group-item"> Dishes and Appliances</li>
                     <li class="list-group-item"> Common dining, living, basement storage, and outdoor areas.</li>
-                    <li class="list-group-item"> Close to campus and downtown</li>
+                    <li class="list-group-item"> Close to campus, small shopes and downtown</li>
                     <li class="list-group-item"> Free street parking</li>
                     <li class="list-group-item"> Bike Rack</li>
                     <li class="list-group-item"> Piano</li>
@@ -210,8 +211,114 @@
                 We offer a minimum lease of six months during the school year and three months during the
                 summer.<br><br> To reserve your accommodations ahead of time, apply below and we’ll be in touch!
             </h3>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#"> Click here to Apply ! </a>
+            <button class="btn btn-primary btn-xl text-uppercase"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#ApplyFormDiv"
+                    aria-expanded="false" aria-controls="ApplyFormDiv">
+                Click here to Apply !
+            </button>
+<!--            <i class="fa-solid fa-angles-down text-primary fa-2x"></i>-->
         </div>
+
+        <div class="collapse" id="ApplyFormDiv">
+            <form id="applyForm" class="row g-3" action="https://formspree.io/f/xnqwlwge" method="POST">
+                <div class="col-md-6">
+                    <label for="apply-first-name" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="apply-first-name"  name="First Name"
+                           value="" placeholder="First Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apply-last-name" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="apply-last-name"
+                           name="Last Name" value="" placeholder="Last Name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apply-email" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="apply-email" name="Email" placeholder="Email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apply-phone-number" class="form-label">Phone Number </label>
+                    <input type="tel" class="form-control" id="apply-phone-number" name="Phone Number" placeholder="Phone Number" required>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="apply-student-status" class="form-label">Student Status </label>
+                    <select class="form-select" id="apply-student-status"  name="Student Status" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option> Under Graduate Student</option>
+                        <option> Graduate Student</option>
+                        <option> Not Student</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="apply-gender" class="form-label">Gender </label>
+                    <select class="form-select" id="apply-gender"  name="Gender" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option> Male</option>
+                        <option> Female</option>
+                        <option> Other</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="apply-smoker" class="form-label">Are you a smoker? </label>
+                    <select class="form-select" id="apply-smoker"  name="Smoker" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option> Yes</option>
+                        <option> No</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="apply-arrival-date"  class="form-label"> Arrival at International House </label>
+                    <input type="date" class="form-control" id="apply-arrival-date" name="Arrival Date" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apply-departure-date" class="form-label">Departure from International House </label>
+                    <input type="date" class="form-control" id="apply-departure-date" name="Departure Date" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="apply-home-address" class="form-label">Home Address </label>
+                    <textarea class="form-control" id="apply-home-address"  name="Home Address"  placeholder="Street/City/State/Country/Zip"  rows="3" required></textarea>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="apply-dyka" class="form-label">Do you know anyone at International House? If so, How? </label>
+                    <textarea class="form-control" id="apply-dyka"  name="Do you know Anyone?"   rows="3" ></textarea>
+                </div>
+                <div class="col-md-12">
+                    <label for="apply-other-questions" class="form-label">Other questions ? </label>
+                    <textarea class="form-control" id="apply-other-questions"  name="Other Questions ?"   rows="3" ></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary text-uppercase btn-xl" type="submit">Apply</button>
+                </div>
+
+                <!-- Submit Success message-->
+                <!---->
+                <!-- This is what your users will see upon successful-->
+                <!--  submission of the form-->
+                <div class="d-none" id="submitApplicationFormSuccessMessage">
+                    <div class="text-center mb-3">
+                        <h3 class="fw-bolder">Thank you for Application!</h3>
+                        <br/>
+                        <h5>We will get back to you as soon as possible.</h5>
+                    </div>
+                </div>
+
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitApplicationFormErrorMessage">
+
+                    <div class="text-center text-danger mb-3">
+                        <h4 class="fw-bolder"> Oops! There was a problem submitting your form</h4>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
     </div>
 </section>
 
@@ -223,7 +330,7 @@
             <h2 class="section-heading text-uppercase">Photo Gallery</h2>
             <h3 class="section-subheading text-muted"></h3>
         </div>
-        <div class="row" >
+        <div class="row">
             <!-- Room-0 -->
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                 <div class="portfolio-item">
@@ -231,7 +338,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-0</div>
@@ -247,7 +354,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-1</div>
@@ -263,7 +370,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-2</div>
@@ -279,7 +386,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-3</div>
@@ -295,7 +402,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-4</div>
@@ -311,7 +418,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-5</div>
@@ -327,7 +434,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-6</div>
@@ -343,7 +450,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-7</div>
@@ -352,21 +459,6 @@
                 </div>
             </div>
 
-            <!-- Room-8 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-bs-toggle="modal" href="#room-8">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Room-8</div>
-                        <div class="portfolio-caption-subheading text-muted">< 2nd Floor ></div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Room-9 -->
             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -375,7 +467,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-9</div>
@@ -391,7 +483,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-10</div>
@@ -407,7 +499,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/room_1.jpeg" alt="room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Room-11</div>
@@ -423,7 +515,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/common_room_1.jpeg" alt="common-room-1"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/common_room_1.jpeg" alt="common-room-1"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Common-Area</div>
@@ -439,7 +531,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/gallery/kitchen_1.jpeg" alt="kitchen"/>
+                        <img class="img-thumbnail" src="assets/img/gallery/kitchen_1.jpeg" alt="kitchen"/>
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Kitchen</div>
@@ -482,24 +574,25 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <!-- Name input-->
-                        <input class="form-control" name="name" id="name" type="text" placeholder="Your Name *" required/>
+                        <input class="form-control" name="name" id="Name" type="text" placeholder="Your Name *"
+                               required/>
 
                     </div>
                     <div class="form-group">
                         <!-- Email address input-->
-                        <input class="form-control" name="email" id="email" type="email" placeholder="Your Email *"
+                        <input class="form-control" name="Email" id="email" type="email" placeholder="Your Email *"
                                required/>
                     </div>
                     <div class="form-group mb-md-0">
                         <!-- Phone number input-->
-                        <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone *"
+                        <input class="form-control" name="Phone" id="phone" type="tel" placeholder="Your Phone *"
                                required/>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group form-group-textarea mb-md-0">
                         <!-- Message input-->
-                        <textarea class="form-control" name="message"  id="message" placeholder="Your Message *"
+                        <textarea class="form-control" name="Message" id="message" placeholder="Your Message *"
                                   required></textarea>
                     </div>
                 </div>
@@ -524,7 +617,7 @@
             <div class="d-none" id="submitContactFormErrorMessage">
 
                 <div class="text-center text-danger mb-3">
-                     <h4 class="fw-bolder"> Oops! There was a problem submitting your form</h4>
+                    <h4 class="fw-bolder"> Oops! There was a problem submitting your form</h4>
 
                 </div>
             </div>
@@ -1255,6 +1348,7 @@
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 <script src="js/contact_form.js"></script>
+<script src="js/application_form.js"></script>
 <!--&lt;!&ndash; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *&ndash;&gt;-->
 <!--&lt;!&ndash; * *                               SB Forms JS                               * *&ndash;&gt;-->
 <!--&lt;!&ndash; * * Activate your form at https://startbootstrap.com/solution/contact-forms * *&ndash;&gt;-->
