@@ -64,11 +64,18 @@
 .img-thumbnail {
     height: 150px;
     width: 200px;
-    margin:auto;
-    display:block;
+    margin: auto;
+    display: block;
 }
 
-.carousel-images-fixed-size{
-    height:777px;
-    width:777px;
+.carousel-images-fixed-size {
+    height: 555px !important;
+    width: 555px !important;
+    margin: auto;
+    display: block;
+    /*padding: 10px;*/
+}
+.carousel-control-prev, .carousel-control-next{
+    opacity: 1.0;
+    width: 25%;
 }

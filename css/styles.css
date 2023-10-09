@@ -11409,8 +11409,8 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image : linear-gradient(rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)), url("../assets/img/house_front.jpeg");
+  background-image : linear-gradient(rgba(255, 255, 255, 0.4),
+  rgba(0, 0, 0, 0.3)), url("../assets/img/house_front.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
