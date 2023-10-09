@@ -82,3 +82,14 @@
 .portfolio-modal .modal-dialog .modal-content {
     background-color: #cdcecf;
 }
+
+p.review-text{
+    font-style: italic;
+    font-weight: 300;
+    padding: 10px 50px;
+}
+
+#review-carousel * .card-body{
+    margin-left: auto;
+    margin-right: auto;
+}
