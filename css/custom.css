@@ -79,3 +79,6 @@
     opacity: 1.0;
     width: 25%;
 }
+.portfolio-modal .modal-dia log .modal-content {
+    background-color: #f8f9fa;
+}
