@@ -67,3 +67,8 @@
     margin:auto;
     display:block;
 }
+
+.carousel-images-fixed-size{
+    height:777px;
+    width:777px;
+}
